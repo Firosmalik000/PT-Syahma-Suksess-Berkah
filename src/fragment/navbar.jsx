@@ -16,7 +16,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
   const [isMenuToggled, setIsMenuToggled] = useState(false);
 
   const isDesktop = useMediaQuery('(min-width: 768px)');
-  const navbarBackground = isTopOfPage ? '' : 'bg-blue-500 text-white hover:text-blue-800 transtion duration-300  shadow-lg';
+  const navbarBackground = isTopOfPage ? '' : 'bg-blue-500 text-white  shadow-lg';
   return (
     <nav className={`${navbarBackground} z-40 w-full fixed top-0 py-6`}>
       <div className="flex items-center justify-between mx-auto w-5/6">
