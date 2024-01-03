@@ -25,11 +25,11 @@ const projectVariant = {
 
 const Project = ({ title, src }) => {
   const overlayStyles = `absolute h-full w-full opacity-0 hover:opacity-90 transition duration-500
-    bg-grey z-30 flex flex-col justify-center items-center text-center p-16 text-deep-blue`;
+    bg-grey z-30 flex flex-col justify-center items-center text-center p-16 text-deep-blue overflow-x-hidden overflow-y-auto pt-3`;
   const projectTitle = title.split(' ').join('-').toLowerCase();
 
   return (
-    <motion.div variants={projectVariant} className="relative">
+    <motion.div variants={projectVariant} className="relative  ">
       <div className={overlayStyles}>
         <p className="text-2xl font-playfair">{title}</p>
         <p className="mt-7">We offer charcoal briquettes of excellent quality, ensuring that our customers receive reliable and efficient products.</p>
@@ -40,7 +40,7 @@ const Project = ({ title, src }) => {
 };
 const Project2 = ({ title, src }) => {
   const overlayStyles = `absolute h-full w-full opacity-0 hover:opacity-90 transition duration-500
-    bg-grey z-30 flex flex-col justify-center items-center text-center p-16 text-deep-blue`;
+    bg-grey z-30 flex flex-col justify-center items-center text-center p-16 text-deep-blue overflow-x-hidden overflow-y-auto md:pt-1 pt-[150px]`;
   const projectTitle = title.split(' ').join('-').toLowerCase();
 
   return (
@@ -55,7 +55,7 @@ const Project2 = ({ title, src }) => {
 };
 const Project3 = ({ title, src }) => {
   const overlayStyles = `absolute h-full w-full opacity-0 hover:opacity-90 transition duration-500
-    bg-grey z-30 flex flex-col justify-center items-center text-center p-16 text-deep-blue`;
+    bg-grey z-30 flex flex-col justify-center items-center text-center p-16 text-deep-blue overflow-x-hidden overflow-y-auto md:pt-1 pt-[150px]`;
   const projectTitle = title.split(' ').join('-').toLowerCase();
 
   return (
@@ -70,7 +70,7 @@ const Project3 = ({ title, src }) => {
 };
 const Project4 = ({ title, src }) => {
   const overlayStyles = `absolute h-full w-full opacity-0 hover:opacity-90 transition duration-500
-    bg-grey z-30 flex flex-col justify-center items-center text-center p-16 text-deep-blue`;
+    bg-grey z-30 flex flex-col justify-center items-center text-center p-16 text-deep-blue overflow-x-hidden overflow-y-auto md:pt-1 pt-[150px]`;
   const projectTitle = title.split(' ').join('-').toLowerCase();
 
   return (
@@ -85,7 +85,7 @@ const Project4 = ({ title, src }) => {
 };
 const Project5 = ({ title, src }) => {
   const overlayStyles = `absolute h-full w-full opacity-0 hover:opacity-90 transition duration-500
-    bg-grey z-30 flex flex-col justify-center items-center text-center p-16 text-deep-blue`;
+    bg-grey z-30 flex flex-col justify-center items-center text-center p-16 text-deep-blue overflow-x-hidden overflow-y-auto md:pt-1 pt-[150px]`;
   const projectTitle = title.split(' ').join('-').toLowerCase();
 
   return (
@@ -100,7 +100,7 @@ const Project5 = ({ title, src }) => {
 };
 const Project6 = ({ title, src }) => {
   const overlayStyles = `absolute h-full w-full opacity-0 hover:opacity-90 transition duration-500
-    bg-grey z-30 flex flex-col justify-center items-center text-center p-16 text-deep-blue`;
+    bg-grey z-30 flex flex-col justify-center items-center text-center p-16 text-deep-blue overflow-x-hidden overflow-y-auto md:pt-1 pt-[150px]`;
   const projectTitle = title.split(' ').join('-').toLowerCase();
 
   return (
@@ -115,7 +115,7 @@ const Project6 = ({ title, src }) => {
 };
 const Project7 = ({ title, src }) => {
   const overlayStyles = `absolute h-full w-full opacity-0 hover:opacity-90 transition duration-500
-    bg-grey z-30 flex flex-col justify-center items-center text-center p-16 text-deep-blue`;
+    bg-grey z-30 flex flex-col justify-center items-center text-center p-16 text-deep-blue overflow-x-hidden overflow-y-auto md:pt-1 pt-[150px]`;
   const projectTitle = title.split(' ').join('-').toLowerCase();
 
   return (
@@ -130,7 +130,7 @@ const Project7 = ({ title, src }) => {
 };
 const Project8 = ({ title, src }) => {
   const overlayStyles = `absolute h-full w-full opacity-0 hover:opacity-90 transition duration-500
-    bg-grey z-30 flex flex-col justify-center items-center text-center p-16 text-deep-blue`;
+    bg-grey z-30 flex flex-col justify-center items-center text-center p-16 text-deep-blue overflow-x-hidden overflow-y-auto md:pt-1 pt-[150px]`;
   const projectTitle = title.split(' ').join('-').toLowerCase();
 
   return (

@@ -29,11 +29,11 @@ const Landing = ({ setSelected }) => {
         <div className="z-30 basis-2/5 mt-12 md:mt-32">
           {/* heading */}
           <motion.div initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.5 }} transition={{ duration: 0.5 }} variants={{ hidden: { opacity: 0, x: -50 }, visible: { opacity: 1, x: 0 } }}>
-            <p className="text-6xl font-playfair z-10 text-center md:text-start">
+            <p className="text-4xl md:text-6xl font-playfair z-10 text-center md:text-start">
               SYAHMA {'  '}{' '}
               <span
-                className="xs:relative xs:text-deep-blue xs:font-semibold z-20 xs:before:content-brush
-              before:absolute before:-left-[25px] before:-top-[70px] before:z-[-1]"
+                className="xs:relative xs:text-deep-blue xs:font-semibold z-20 
+          "
               >
                 BRIQUETTE CHARCOAL
               </span>
@@ -54,12 +54,9 @@ const Landing = ({ setSelected }) => {
             <AnchorLink className="bg-gradient-rainblue text-deep-blue rounded-sm py-3 px-7 font-semibold hover:bg-blue hover:text-white transition duration-500" onClick={() => setSelected('contact')} href="#contact">
               Contact Me
             </AnchorLink>
-            <AnchorLink className="rounded-r-sm bg-gradient-rainblue py-0.5 pr-0.5" onClick={() => setSelected('contact')} href="#contact">
-              <div className="bg-deep-blue hover:text-red transition duration-500 w-full h-full flex items-center justify-center font-playfair px-10">Lets Talk</div>
-            </AnchorLink>
           </motion.div>
           <motion.div
-            className="flex mt-5 justify-center md:justify-start"
+            className="flex mt-2 md:mt-5 justify-center md:justify-start"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.5 }}

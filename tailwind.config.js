@@ -27,6 +27,15 @@ module.exports = {
         person2: "url('./assets/mark.jpg')",
         landing: "url('./assets/bg-landing.jpg')",
       },
+      animation: {
+        slide: 'slide 25s linear infinite',
+      },
+      keyframes: {
+        slide: {
+          '0%,100%': { transform: 'translateX(5%)' },
+          '50%': { transform: 'translateX(-120%)' },
+        },
+      },
     },
     screens: {
       xs: '480px',
