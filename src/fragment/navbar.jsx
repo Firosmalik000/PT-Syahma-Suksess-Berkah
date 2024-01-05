@@ -8,7 +8,7 @@ import { CiMenuFries } from 'react-icons/ci';
 const Link = ({ page, selectedPage, setSelectedPage }) => {
   const lowerCasePage = page.toLowerCase();
   return (
-    <AnchorLink className={`${selectedPage === lowerCasePage ? 'text-blue-500' : ''} hover:text-blue-500 transition duration-300`} href={`#${lowerCasePage}`} onClick={() => setSelectedPage(lowerCasePage)}>
+    <AnchorLink className={`${selectedPage === lowerCasePage ? 'text-blue-500' : ''} hover:scale-125 transition duration-300`} href={`#${lowerCasePage}`} onClick={() => setSelectedPage(lowerCasePage)}>
       {page}
     </AnchorLink>
   );
@@ -21,15 +21,16 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
   return (
     <nav className={`${navbarBackground} z-40 w-full fixed top-0 py-6 transition-all duration-300`}>
       <div className="flex items-center justify-between mx-auto w-5/6">
-        <h4 className="font-playfair text-3xl font-bold">SYAHMA</h4>
+        <AnchorLink href="#home">
+          <h4 className="font-playfair text-3xl font-bold">SYAHMA</h4>
+        </AnchorLink>
         {/* isdekstop */}
         {isDesktop ? (
           <div className="flex justify-between gap-16 font-opensans text-sm font-semibold">
-            <Link page="Home" selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
-
             <Link page="About" selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
             <Link page="Service" selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
             <Link page="Shipment" selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
+            <Link page="Contact" selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
           </div>
         ) : (
           <button className={`  p-2 ${isTopOfPage ? 'text-black' : 'text-white'}`} onClick={() => setIsMenuToggled(!isMenuToggled)}>
@@ -48,11 +49,10 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
 
             {/* MENU ITEMS */}
             <div className="flex flex-col gap-10 ml-[33%] text-2xl text-white">
-              <Link page="Home" selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
-
               <Link page="About" selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
               <Link page="Service" selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
               <Link page="Shipment" selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
+              <Link page="Contact" selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
             </div>
           </div>
         )}

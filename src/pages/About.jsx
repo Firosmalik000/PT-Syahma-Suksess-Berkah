@@ -24,7 +24,7 @@ const MySkills = () => {
             ABOUT <span className="text-red"> US</span>
           </p>
           <LineGradient width="w-1/3" />
-          <p className="mt-10 mb-7 text-justify indent-8 ">
+          <p className="mt-5 text-justify indent-8 ">
             SYAHMA SUCCESS BERKAH, established and experienced since 2021, initially formed and focused on the production of charcoal briquettes and became a supplier in Indonesia. We are purposely formed to increase our sales and
             production factory. Now, we are introducing a new innovation in the field of charcoal briquettes trading company, ready to establish long-term partnership with our customers and buyer. Our principle is to sell products at low
             prices that are directly distributed by us factory.rs and build their trust in us as a desired supplier. With a capacity of 500 metric tons per month in each factory.
