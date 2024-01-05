@@ -27,9 +27,6 @@ const SocialMedia = () => {
       <motion.a variants={projectVariant} className={classIcon} href="#" target="_blank" rel="noreferrer">
         <FaWhatsapp />
       </motion.a>
-      <motion.a variants={projectVariant} className={classIcon} href="#" target="_blank" rel="noreferrer">
-        <RiFacebookCircleFill />
-      </motion.a>
     </motion.div>
   );
 };
